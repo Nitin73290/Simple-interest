@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+ function calculator(){
+    var price=document.getElementById("first").value;
+    var rate=document.getElementById("second").value;
+    var time=document.getElementById("third").value;
+    let interest=(price*rate*time)/100;
+    document.getElementById("answer").innerHTML=interest;
+ }
+</script>
+<body>
+    <h1>simple interest</h1>
+   <div class="cal">
+    <h4>Price:</h4><input type="number" id="first">
+    <h4>Rate:</h4><input type="number" id="second">
+    <h4>Time:</h4><input type="number" id="third">
+    <button onclick="calculator()" id="btn">Simple Interest</button>
+    <p id="answer"></p>
+    </div>
+</body>
+</html>
